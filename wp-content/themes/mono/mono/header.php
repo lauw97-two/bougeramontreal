@@ -24,6 +24,8 @@
 
 	<!-- Load stylesheets -->	
 	<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/screen.css" media="screen" />	
+	<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" media="screen" />	
+	<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" media="screen" />	
 	<?php /* Dynamic CSS from Theme Settings */ include_once(TEMPLATEPATH . "/css/dynamic-css.php"); ?>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<!-- // Load stylesheets -->
@@ -35,6 +37,8 @@
 		wp_enqueue_script("slides", get_template_directory_uri() . "/js/libs/slides.min.jquery.js");
 		wp_enqueue_script("superfish", get_template_directory_uri() . "/js/libs/superfish-combined.js");
 		wp_enqueue_script("cudazi_general", get_template_directory_uri() . "/js/script.js");
+		wp_enqueue_script("bootstrap", get_template_directory_uri() . "/js/bootstrap.js");
+		wp_enqueue_script("bootstrap", get_template_directory_uri() . "/js/bootstrap-responsive.js");
 		wp_head(); // do not remove this
 	?>	
 	<!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
@@ -47,6 +51,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+    
 	<div id="outer">			
 		<div id="header" class="clearfix">				
 			<div class="container_12">
