@@ -14,3 +14,8 @@ License URI: http://cudazi.com/
 CSS / Styles found in the /css/ folder.
 This file is applied after the main CSS if you want to add-on styles here instead.
 */
+
+body a{
+    
+    color: #999;
+}
