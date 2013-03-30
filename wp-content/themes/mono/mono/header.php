@@ -47,7 +47,19 @@
 	<link type="text/css" rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.gif" />
 	<link type="text/css" rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png" />
 	<!-- // site icons -->
-	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39123040-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>	
 </head>
 
 <body <?php body_class(); ?>>
@@ -64,8 +76,6 @@
 						$menu_container_left = 'grid_2';
 						$menu_container_right = 'grid_10';
 					}else if( $logo_area_size == 'medium' ){
-						$menu_container_left = 'grid_3';
-						$menu_container_right = 'grid_9';
 					}else if( $logo_area_size == 'large' ){
 						$menu_container_left = 'grid_4';
 						$menu_container_right = 'grid_8';
@@ -73,6 +83,8 @@
 						$menu_container_left = 'grid_2';
 						$menu_container_right = 'grid_10';
 					}
+						$menu_container_left = 'grid_3';
+						$menu_container_right = 'grid_9';
 				?>
 				<div class="<?php echo $menu_container_left; ?>">					
 					<h1 id="logo">
